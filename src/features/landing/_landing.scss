@@ -1,0 +1,22 @@
+@import "../../styles/varibles";
+.landing{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    @media (max-width: $sm) {
+        width: 90%;
+    }
+}
+.header__cta{
+    @include header-font;
+    margin-top: 80px;
+
+    &__caption{
+        width: 40%;
+        @media (max-width: $sm) {
+           width: 80%;
+        }
+    }
+
+
+}
