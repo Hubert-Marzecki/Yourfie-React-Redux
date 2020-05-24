@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import stats from "../stats/statsSlice";
+import stats from "../../features/stats/statsSlice";
 
 
 interface imageObject {
@@ -27,7 +27,7 @@ interface User {
 function initialStateUser () {
 return {
     country: "PL",
-    display_name: "Hubert Marzecki",
+    display_name: "AAA",
     email: "hmarzecki696@gmail.com",
     explicit_content: {filter_enabled: false, filter_locked: false},
     external_urls: {spotify: "https://open.spotify.com/user/21g7suzikynmr4oqslhgmldca"},
@@ -39,19 +39,12 @@ return {
     uri: "spotify:user:21g7suzikynmr4oqslhgmldca"
 }
 }
+
  export const user = createSlice({
     name: "user",
     initialState: initialStateUser(),
     reducers:{
-        loadUser: ( state:any, action) => state.user = action.payload
-    }
-})
-
-export const topArtists = createSlice({
-    name: "topArtists",
-    initialState: "initial State",
-    reducers: {
-        loadArtists: (state: any,action) => state.topArtists = action.payload
+        setUser: ( state:any, action) => action.payload
     }
 })
 
@@ -59,5 +52,6 @@ export const topArtists = createSlice({
 
 
 
-export const getUser = (state:any) => state.user;
-export const getTopArtists = (state: any) => state.topArtists
+
+export const setUser = (state:any) => state.user;
+export default user;
