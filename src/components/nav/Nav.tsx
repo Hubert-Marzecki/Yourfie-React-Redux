@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from "react"
 import  {useSelector, useDispatch} from "react-redux";
-import {getUser} from "../features/landing/LandingSlice";
+import {setUser} from "../../app/slices/userSlice";
+import Icon from "../../assets/icons/kz-number-one@3x.png";
+
 import "./nav.scss";
 
 export function Nav() : JSX.Element {
     const [state, setState] = useState<boolean>(false);
-    const user = useSelector(getUser)
+    const user = useSelector(setUser)
 
     return (
         <div className="landing">
@@ -25,8 +27,8 @@ export function Nav() : JSX.Element {
                     <li><a href="#">Home</a></li>
                     <li><a href="#">TopArtists</a></li>
                     <li><a href="#">Top Tracks</a></li>
-                    <li><a href="#">{user.display_name}</a> </li>
-                    <li><a href="#">  <img className="user__img" src={user.images[0].url} /> </a></li>
+                    <li><a href="#">Look for tracks</a> </li>
+                    <li><a href="#">  <img className="user__img" src={ user.images === undefined ? {Icon} : user.images[0].url} /> </a></li>
                 </ul>
             </div>
         </div>

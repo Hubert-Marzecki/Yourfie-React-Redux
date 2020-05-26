@@ -1,0 +1,18 @@
+@import "../../styles/varibles";
+
+.cards__container{
+  display: flex;
+
+}
+
+
+.card__artist{
+  margin: 3em 1em ;
+  border-radius:3px;
+  padding:1em;
+  img{
+  height: 35vh;
+    border-radius:3px;
+  }
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
