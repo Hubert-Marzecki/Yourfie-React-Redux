@@ -1,7 +1,5 @@
 import Spotify from "spotify-web-api-js";
-import userSlice from "../app/slices/userSlice";
-import topArtistsSlice from "../app/slices/topArtistSlice";
-import {useDispatch} from "react-redux";
+
 
 export const spotifyApi = new Spotify();
 spotifyApi.setAccessToken('');

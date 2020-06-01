@@ -1,14 +1,16 @@
+@import "src/styles/varibles";
 .cta {
   margin: 40px auto;
   display: block;
-  background-color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  background-color: $blue-dark;
+  color: $white;
+  @include button;
   font-weight: 400;
   font-size: 1.4em;
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 10px 10px;
-  box-shadow:  5px 5px 15px #b3b3b3,
-  -5px -5px 15px #ffffff;
+  letter-spacing: 1px;
+  font-family: "medium";
+  //box-shadow:  5px 5px 15px #b3b3b3,
+  //-5px -5px 15px #ffffff;
 }

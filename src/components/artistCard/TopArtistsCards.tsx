@@ -6,7 +6,7 @@ import "./_topArtists.scss"
 
 export function TopArtistCards  () : JSX.Element  {
     const topArtists = useSelector(setTopArtists)
-    console.log(topArtists.items)
+
 
 return (
             <div className="cards__container">
