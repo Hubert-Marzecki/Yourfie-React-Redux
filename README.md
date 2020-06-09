@@ -1,5 +1,5 @@
 
-## General info
+## YOUTFIE :musical_note:
 Yourfie is a React + Redux application that uses data from Spotify Web API.
 The application that will allow a user to:
 * See mostly listen to artists, and tracks from the last 4 weeks, 6 msc, and from the account beginning.
@@ -10,10 +10,10 @@ The application that will allow a user to:
 
 ## Technologies
 Project is created with:
-* React
 * React Hooks
 * TypeScript
 * Redux
+* Redux Toolkit
 * Node.js
 * SCSS
 	
